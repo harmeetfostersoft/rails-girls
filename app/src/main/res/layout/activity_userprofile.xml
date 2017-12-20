@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.Offers.ContactUs">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/menu"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgLogoTimer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/new_logo_app"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvLogoTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoTimer"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="@string/logoText"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeView"
+        android:layout_below="@+id/tvLogoTimer"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                    android:id="@+id/tvContactUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:textColor="#2D303A"
+                    android:layout_marginTop="20dp"
+                    android:text="Profile"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/updateImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="16sp"
+                    android:src="@drawable/profile_pic"
+                    android:layout_below="@+id/tvContactUs"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/updateimgIcon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="70sp"
+                    android:src="@drawable/new_edit"
+                    android:layout_below="@+id/tvContactUs"
+                    android:layout_alignRight="@+id/updateImageView"
+                    android:layout_alignEnd="@+id/updateImageView" />
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/updateImageView">
+
+
+                    <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/editfullname"
+                        android:hint="Name"
+                        android:maxLength="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:background="@drawable/edt_text_bg">
+                        <requestFocus></requestFocus>
+                    </com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold>
+
+
+
+                    <com.example.fostersoftsol01.luvoffers.EditTextLight
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/editUEmail"
+                        android:hint="Email"
+                        android:gravity="center"
+                        android:maxLength="30"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#000000"
+                        android:inputType="textEmailAddress"
+                        android:layout_below="@+id/editfullname"
+                        android:background="@drawable/edt_text_bg"/>
+                    <com.example.fostersoftsol01.luvoffers.EditTextLight
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/edit_dob"
+                        android:hint="D.O.B"
+                        android:gravity="center"
+                        android:maxLength="30"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#000000"
+                        android:inputType="textEmailAddress"
+                        android:layout_below="@+id/editUEmail"
+                        android:background="@drawable/edt_text_bg"/>
+
+                    <com.example.fostersoftsol01.luvoffers.EditTextLight
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/editlocation"
+                        android:hint="Location"
+                        android:gravity="center"
+                        android:maxLength="30"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#000000"
+                        android:inputType="textEmailAddress"
+                        android:layout_below="@+id/edit_dob"
+                        android:background="@drawable/edt_text_bg"/>
+
+
+                    <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+                        android:id="@+id/btneditSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/editlocation"
+                        android:text="@string/btnSubmit"
+                        android:background="@color/btn_accept"
+                        android:textColor="#FFFFFF"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+

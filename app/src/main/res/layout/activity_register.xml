@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relate"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.Register">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/new_logo_app"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="@string/logoText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="REGISTER:"
+                android:textColor="#2D303A"/>
+
+
+            <com.example.fostersoftsol01.luvoffers.EditTextLight
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edtFullName"
+                android:textSize="18sp"
+                android:maxLength="15"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:hint="full name"
+                android:layout_below="@+id/tvRegister"
+                android:textColor="#1E232D"
+                android:background="@drawable/edt_text_bg"
+                android:textColorHint="#1E232D"
+                android:inputType="textPersonName" />
+
+
+            <com.example.fostersoftsol01.luvoffers.EditTextLight
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edtDate"
+                android:textSize="18sp"
+                android:maxLength="10"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:hint="date of birth"
+                android:layout_below="@+id/edtFullName"
+                android:textColor="#1E232D"
+                android:background="@drawable/edt_text_bg"
+                android:textColorHint="#1E232D"
+                android:inputType="date" />
+
+
+            <com.example.fostersoftsol01.luvoffers.EditTextLight
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edtLocation"
+                android:textSize="18sp"
+                android:maxLength="15"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:hint="location"
+                android:layout_below="@+id/edtDate"
+                android:textColor="#1E232D"
+                android:background="@drawable/edt_text_bg"
+                android:textColorHint="#1E232D"
+                android:inputType="textPostalAddress" />
+
+
+            <com.example.fostersoftsol01.luvoffers.EditTextLight
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edtEmail"
+                android:textSize="18sp"
+                android:maxLength="30"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:hint="email"
+                android:layout_below="@+id/edtLocation"
+                android:textColor="#1E232D"
+                android:background="@drawable/edt_text_bg"
+                android:textColorHint="#1E232D"
+                android:inputType="textEmailAddress" />
+
+
+            <com.example.fostersoftsol01.luvoffers.EditTextLight
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edtPassword"
+                android:textSize="18sp"
+                android:maxLength="8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:hint="password"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/edtEmail"
+                android:textColor="#1E232D"
+                android:background="@drawable/edt_text_bg"
+                android:textColorHint="#1E232D"
+                android:inputType="textPassword" />
+
+
+            <com.example.fostersoftsol01.luvoffers.EditTextLight
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/edtConfrimPass"
+                android:textSize="18sp"
+                android:maxLength="8"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:hint="confirm password"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/edtPassword"
+                android:textColor="#1E232D"
+                android:background="@drawable/edt_text_bg"
+                android:textColorHint="#1E232D"
+                android:inputType="textPassword" />
+
+
+            <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edtConfrimPass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/btn_accept"
+                android:textColor="#FFFFFF"
+                android:paddingStart="10dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingEnd="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/btnSubmit"
+                />
+            </LinearLayout>
+         </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

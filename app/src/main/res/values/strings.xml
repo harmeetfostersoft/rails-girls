@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Luvoffer</string>
+
+    <string name="logoText">L U V O F F E R</string>
+    <string name="btnFaceBook">Login with Facebook</string>
+    <string name="btnGoogle">Login with G+</string>
+    <string name="btnEmail">Sign in with Email</string>
+
+    <string name="tvUserName">Username:</string>
+    <string name="tvPassword">Password:</string>
+    <string name="btnSubmit">Submit</string>
+
+    <string name="luvHeader">L U V O F F E R</string>
+    <string name="giftBags">Item Name</string>
+    <string name="other">Other Thinks You May Like...</string>
+    <string name="clintonLogo">CLINTON CARDS</string>
+    <string name="offers">GET OFFERS</string>
+    <string name="later">LATER</string>
+    <string name="accpet_offer">ACCEPT OFFER</string>
+    <string name="timmer">23.59.01</string>
+    <string name="stores">STORES USING LUVOFFER:</string>
+    <string name="swipe">swipe for your preferences</string>
+    <string name="thanks">GOT IT, THANKS!</string>
+    <string name="imgText">LOREM IPSUM DOLOR</string>
+
+    <string name="facebook_app_id">1909244262656606</string>
+    <string name="fb_login_protocol_scheme">fb1909244262656606</string>
+
+    <string name="greggs">GREGGS BAKERY</string>
+    <string name="tesco">TESCO EXTRA</string>
+    <string name="costa">COSTA COFFEE</string>
+    <string name="debenhams">DEBENHAMS</string>
+    <string name="clinton">CLINTON</string>
+    <string name="next">NEXT</string>
+    <string name="ms">MARKS &amp; SPENCER</string>
+    <string name="mcD">MCDONALDS</string>
+    <string name="items">Items you may like:</string>
+
+    <string name="wrapping">Wrapping Paper Free with All Cards Brought</string>
+    <string name="desc">Description:</string>
+
+    <!--<string name="details">Wrap up your specical gifts with this great wrapping paper. Measures - 70cm by 3 metre continuous roll. Various colours and designs available.\n \nFor every card to the value of "\u00a3"5.00 you buy, you get a pack of "\u00a3"2.99 wrapping paper for free.</string>-->
+
+    <string name="details">Wrap your gift for any occasion with this flat wrap paper. This high quality flat wrap paper features the large colourful print on a wide range of backgrounds, making this the perfect finishing touch for your gift.</string>
+
+    <string name="sausages">10 Sausage Rolls for 50p</string>
+    <string name="details_greggs">All hail a British classic! our tasty Sausage Rolls have developed a bit of a following over the years. And it\'s easy to see why.\nFreshly baked in our shops throughout the day, these family favourites are made from seasoned sausage meat wrapped in layers of crisp, golden puff pastry.</string>
+    <string name="offer_greggs"><u>Offer valid until closing time today.</u></string>
+
+    <string name="tesco_header">Bananas Half Price for 1 Hour</string>
+    <!--<string name="tesco_detail">All of our bananas are Rainforest Alliance Certified. Together we are committed to building a more sustainable future.\nPacked:\nCameroonColombiaCosta Ricathe Dominican RepublicEcuadorGhanaGuatemalalvory Coast (Cote d\'voire)</string>-->
+    <!---->
+    <string name="tesco_detail"> All of our bananas are Rainforest Alliance Certified. Together we are committed  to building a more sustainable future.
+           \nPacked:\nCameroonColombiaCostaRicathe Dominican\nRepublicEcuadorGhanaGuatemalaIvory Coast (Côte d\'Ivoire)
+            </string>
+
+
+    <string name="tesco_offer"><u>Offer untill stock finishes...</u></string>
+
+    <string name="costa_header">Buy a Coffee Get a Free Muffin</string>
+    <string name="costa_detail">Velvet flat white Coffee.\nThis one is the barista\'s pride and joy. It\'s rich, full flavoured coffee with a velvet smooth texture that\'s finished with the perfect florette.\n\nBuy any of our range of coffees and get a chocalate Chip Muffin for free</string>
+    <string name="costa_offer"><u>While stocks last...</u></string>
+
+    <string name="email_hint">example@email.com</string>
+    <string name="password_hint">........</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="tvForgotPass">forgot password?</string>
+    <string name="tvRegisterNow">register now!</string>
+    <string name="chicher">PLEASE GO TO THE\n CHECKOUT</string>
+    <string name="timer">TIMER:</string>
+    <string name="contactUs">CONTACT US:</string>
+
+    <string name="navOffer">Offers</string>
+    <string name="navContact">Contact Us</string>
+    <string name="navWork">HOW IT WORKS:</string>
+    <string name="skip"><u>S k i p</u></string>
+    <!--<string name="work_detail">Lorem ipsum dolor sit amer. consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>-->
+
+    <string name="work_detail_location">Make sure that your location settings are turned on so that Luvoffer can recognize where you are and where the closest participating retailer is.</string>
+    <string name="work_detail_outlets">Simply choose the ones you want offers from. Once you see what you like click on the offer. Then click \'Get Offer\'</string>
+    <string name="work_detail_checkout">Ask the cashier to kindly activate your offers, then this will prohibit you from using this offer for a period of 24 hours. Not to worry your next offer is waiting for you around the corner. Literally. The opportunities are endless.</string>
+
+
+    <string name="debenhams_header">50% off all Lingerie</string>
+    <string name="debenhams_detail">This underwear from our B by Ted Baker range will brighten up a lingerie wardrobe. Finished with an eye-catching \'Hanging Gardens\' pattern, it flatters with lace detail and a logo pendant.\n - Main: 60\u0025 polyamide, 27\u0025 polyester, 13\u0025 elastane\n - Cup liner: 100\u0025 cotton\n - Machine washable</string>
+
+
+    <string name="debenhams_offers"><u>While stocks last...</u></string>
+
+    <string name="next_header">50% off Menswear for the Next Hour</string>
+    <string name="next_detail">Whether you\'re looking for a new outfit, on trend tailoring or everyday essentials, browse these up-to-the-minute men\'s clothing collections. Mix and match the latest men\'s fashion pieces with your favourite statement styles from Next. </string>
+    <string name="next_offers"><u>While stocks last...</u></string>
+
+    <string name="ms_header">Fruit Salads for 50p</string>
+    <string name="ms_detail">Lovely refreshing summer fruit salad with coconuts-add a bit of fun and complemented the fruit. With a selection of fresh melons and a big tub means you get plenty for your money. </string>
+    <string name="ms_offers"><u>While stocks last...</u></string>
+
+    <string name="mcD_header">Free Big Mac Burgers</string>
+    <string name="mcD_details">Two 100% beef patties with lettuce, onions, pickles, cheese and our unbeatable Big Mac sauce - all in a sesame seed bun.</string>
+    <string name="mcD_offers"><u>While stocks last...</u></string>
+
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="dummy_string">Dummy String</string>
+    <string name="contact"></string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="all" formatted="false">Amount: %.2f%n  for %d days</string>
+    <string name="continue_"><u>C&#160;o&#160;n&#160;t i n u e</u></string>
+    <string name="simply_choose_the">Simply choose the ones you want offers from.Once you see what you like click on offer. Then click on \'Get Offer\'</string>
+    <string name="ask_the_cas">Ask the cashier to kindly activate your offers, then this will prohibit you from using this offer for a period of 24 hours. Not to worry your next offer is waiting for you around the corner. Literally, the opportunities are endless.</string>
+
+</resources>

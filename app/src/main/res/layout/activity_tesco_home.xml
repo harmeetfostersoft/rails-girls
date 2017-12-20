@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.fostersoftsol01.luvoffers.Tesco.TescoHome">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeView"
+            android:src="@drawable/clintion_new">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:id="@+id/imgClintionHome"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banana_tesco"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/background_edittext"
+                        android:orientation="vertical"
+                        android:id="@+id/linnerLayout"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignBottom="@+id/imgClintionHome"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                            android:id="@+id/tvHeaderTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="B A N A N A S   F O R   £ 1"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                                android:id="@+id/tvHeaderSubTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T E S C O   E X T R A"
+                                android:textSize="14sp"
+                                android:layout_weight="1"
+                                android:textColor="#FFFFFF"/>
+
+                            <TextView
+                                android:id="@+id/tvSubText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jackson Street 5"
+                                android:textColor="#989898"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                android:paddingLeft="10dp"
+                                android:textSize="12sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/tvHeaderSubTitle"
+                                android:layout_toEndOf="@+id/tvHeaderSubTitle" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/tesco_header"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:id="@+id/tvSubText"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:layout_alignBottom="@+id/imgClintionHome"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true" />-->
+
+                    <com.example.fostersoftsol01.luvoffers.textview.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desc"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:background="#ffffff"
+                        android:textColor="#2D303A"
+                        android:id="@+id/tvDesc"
+                        android:layout_below="@+id/imgClintionHome"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                        android:id="@+id/tvDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDesc"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:background="#ffffff"
+                        android:textColor="#2D303A"
+                        android:lineSpacingMultiplier="1.1"
+                        android:text="@string/tesco_detail"
+                        android:textIsSelectable="true" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/tesco_offer"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:textIsSelectable="true"-->
+                        <!--android:textColor="#414241"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:id="@+id/tvOfferLink"-->
+                        <!--android:layout_below="@+id/tvDetails"/>-->
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvDetails"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#BEBEBE" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:id="@+id/linnerLayout1"
+                        android:background="#FFFFFF">
+
+
+                        <com.example.fostersoftsol01.luvoffers.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/items"
+                            android:textSize="16sp"
+                            android:paddingLeft="10dp"
+                            android:textColor="#2d303A"
+                            android:id="@+id/tvItems"
+                            android:layout_below="@+id/imgClintionHome"/>
+
+                    </LinearLayout>
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollView"
+                        android:layout_below="@+id/linnerLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#FFFFFF"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_below="@+id/linnerLayout1"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="45dp">
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/imgFirst"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/apple_new"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignRight="@+id/textView"
+                                        android:layout_alignEnd="@+id/textView" />
+
+                                    <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                                        android:layout_width="80dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/imgFirst"
+                                        android:text="Tescos Apples"
+                                        android:textAlignment="center"
+                                        android:id="@+id/textView" />
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp">
+
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/imgSecond"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/org_new" />
+
+                                    <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                                        android:layout_width="80dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/imgSecond"
+                                        android:text="Tescos Oranges"
+                                        android:textAlignment="center"/>
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/imgThird"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/pear_new" />
+                                    <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                                        android:layout_width="80dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/imgThird"
+                                        android:text="Tescos Pears"
+                                        android:textAlignment="center"/>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/imgFour"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/graps_new" />
+
+                                    <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                                        android:layout_width="80dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/imgFour"
+                                        android:text="Tescos Grapes"
+                                        android:textAlignment="center"/>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </ScrollView>
+
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeViewToolbar">
+
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background_toolbar_translucent"
+            app:layout_scrollFlags="snap">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgMenu"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menu"/>
+
+                <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                    android:id="@+id/tvHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/luvHeader"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+</RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+            android:id="@+id/btnOffers"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtPassword"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bt_back_2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/offers"
+            />
+
+        <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+            android:id="@+id/btnLater"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:text="@string/later"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

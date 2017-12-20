@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="22dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/new_logo_app"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tvLogo"
+            android:layout_alignEnd="@+id/tvLogo" />
+
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/logoText"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_fb"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:scaleType="fitXY"
+            android:text="@string/btnFaceBook"/>
+
+        <Button
+            android:id="@+id/btnGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFacebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_google"
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:scaleType="fitXY"
+            android:text="@string/btnGoogle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:shadowRadius="1.0"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textStyle="bold"
+            android:textColor="#c4c4c4"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/btnGmail"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvOr" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_fb"
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/btnLogin"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

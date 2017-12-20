@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+        android:id="@+id/titleForget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="OTP"
+        android:background="#5E75CE"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <com.example.fostersoftsol01.luvoffers.EditTextLight
+        android:id="@+id/edtOTP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:maxLength="4"
+        android:hint="Enter OTP"
+        android:background="@drawable/edt_text_bg"
+        android:fontFamily="sans-serif"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_below="@+id/titleForget"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#43DEE4"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/edtOTP"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+</RelativeLayout>

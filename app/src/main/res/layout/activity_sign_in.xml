@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:layout_height="match_parent"
+    tools:context="com.example.fostersoftsol01.luvoffers.SignIn">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_image"
+        android:scaleType="centerCrop"
+         />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="65dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/new_logo_app"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="@string/logoText"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_alignParentBottom="true"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+      >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/relativeView2"
+           android:paddingLeft="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="#FFFFFF"
+
+          >
+           <com.facebook.login.widget.LoginButton
+               android:id="@+id/fblogin_button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="30dp"
+               android:visibility="gone"
+               android:layout_marginBottom="30dp" />
+           <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+               android:id="@+id/btnFacebook"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_marginTop="20dp"
+               android:textColor="#FFFFFF"
+               android:background="@color/fb"
+               android:paddingStart="10dp"
+               android:paddingEnd="10dp"
+               android:layout_marginRight="20dp"
+               android:textSize="16sp"
+               style="?android:attr/borderlessButtonStyle"
+               android:text="@string/btnFaceBook"
+               android:layout_alignParentTop="true"
+               android:layout_alignLeft="@+id/edtEmail"
+               android:layout_alignStart="@+id/edtEmail" />
+
+           <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+               android:id="@+id/btnGmail"
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="@color/btn_google"
+               android:textColor="#FFFFFF"
+               android:paddingStart="10dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginTop="20dp"
+               android:paddingEnd="10dp"
+               android:textSize="16sp"
+               android:scaleType="fitXY"
+               style="?android:attr/borderlessButtonStyle"
+               android:text="@string/btnGoogle"
+               android:layout_below="@+id/btnFacebook"
+               android:layout_alignLeft="@+id/btnFacebook"
+               android:layout_alignStart="@+id/btnFacebook" />
+
+           <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="or"
+               android:layout_gravity="center"
+               android:textSize="14sp"
+               android:textColor="#c4c4c4"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/btnGmail"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/tvOr" />
+
+           <com.example.fostersoftsol01.luvoffers.EditTextLight
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:id="@+id/edtloginEmail"
+               android:textSize="16sp"
+               android:maxLength="30"
+               android:layout_marginTop="11dp"
+               android:layout_marginRight="20dp"
+               android:textAlignment="center"
+               android:hint="kathy@gmail.com"
+               android:textColor="#1E232D"
+               android:background="@drawable/edt_text_bg"
+               android:textColorHint="#1E232D"
+               android:inputType="textEmailAddress"
+               android:layout_below="@+id/tvOr"
+               android:layout_alignLeft="@+id/edtPassword"
+               android:layout_alignStart="@+id/edtPassword" />
+
+           <com.example.fostersoftsol01.luvoffers.EditTextLight
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:id="@+id/edtloginPassword"
+               android:textSize="16sp"
+               android:maxLength="30"
+               android:layout_marginTop="10dp"
+
+               android:layout_marginRight="20dp"
+               android:textAlignment="center"
+               android:hint="• • • • • • • •"
+               android:textColor="#1E232D"
+               android:background="@drawable/edt_text_bg"
+               android:textColorHint="#1E232D"
+               android:inputType="textPassword"
+               android:layout_below="@+id/edtloginEmail"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true" />
+
+           <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+               android:id="@+id/btnLogin"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="#49C9BB"
+               android:textColor="#FFFFFF"
+               android:paddingStart="10dp"
+               android:paddingEnd="10dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginTop="20dp"
+               android:textSize="16sp"
+               android:text="@string/btnLogin"
+               style="?android:attr/borderlessButtonStyle"
+               android:layout_below="@+id/edtloginPassword"
+               android:layout_alignLeft="@+id/edtPassword"
+               android:layout_alignStart="@+id/edtPassword" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/linnerLayout"
+               android:layout_below="@+id/btnLogin"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="20dp">
+
+               <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tvforgotPass"
+                   android:layout_weight="1"
+                   android:textSize="14sp"
+                   android:textColor="#5E74BE"
+                   android:text="@string/tvForgotPass"/>
+
+               <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tvRegister"
+                   android:layout_weight="1"
+                   android:textSize="14sp"
+                   android:textColor="#5E74BE"
+                   android:textAlignment="textEnd"
+                   android:layout_gravity="end"
+                   android:text="@string/tvRegisterNow"/>
+
+           </LinearLayout>
+       </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.SelectProduct.SelectProduct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/new_logo_app"
+                android:layout_centerHorizontal="true" />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                android:id="@+id/tvLogoTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLogo"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/logoText"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/tvLogoTimer">
+
+                <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                    android:id="@+id/tvStores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#2D303A"
+                    android:text="@string/stores"/>
+
+                <TextView
+                    android:id="@+id/tvSwipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/tvStores"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/swipe"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgYes"
+                    android:src="@drawable/new_yes"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/tvBrandName"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:layout_marginTop="10dp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgNo"
+                    android:src="@drawable/new_no"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignTop="@+id/imgYes"
+                    android:layout_alignRight="@+id/linearLayout"
+                    android:layout_alignEnd="@+id/linearLayout" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSwipe"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:padding="1dp"
+                    android:background="#bbb"
+                    android:id="@+id/relativeViewImage">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="170dp"
+                        android:id="@+id/imgSwipe"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/greggs_main_new"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/imgInstred"
+                    android:layout_below="@+id/relativeViewImage"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/next"/>
+                <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                    android:id="@+id/tvBrandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:textColor="#2D303A"
+                    android:layout_below="@+id/relativeViewImage"
+                    android:layout_marginTop="10dp"
+                    android:text="GREGGS"/>
+
+                <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                    android:id="@+id/tvBrandSubTitel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="#989898"
+                    android:layout_below="@+id/tvBrandName"
+                    android:layout_marginTop="10dp"
+                    android:text="Jackson Street 5"
+                    android:visibility="gone"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:weightSum="1"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tvBrandSubTitel"
+                    android:id="@+id/linearLayout">
+                    <com.example.fostersoftsol01.luvoffers.textview.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/tvSkip"
+                        android:layout_weight="1"
+                        android:text="@string/skip"
+                        android:textSize="13sp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginRight="5dp"
+                        tools:ignore="RtlCompat" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAll"
+                        android:layout_weight="1"
+                        android:text="All"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:background="#5E75CE"
+                        android:textAlignment="center"
+                        tools:ignore="RtlCompat"
+                        android:textColor="#FFFFFF"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

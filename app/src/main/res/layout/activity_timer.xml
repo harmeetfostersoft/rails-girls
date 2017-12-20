@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.Offers.Timer">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/menu"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgLogoTimer"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/new_logo_app"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+        android:id="@+id/tvLogoTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="@string/logoText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgLogoTimer"
+        android:layout_marginTop="5dp"
+         />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvLogoTimer">
+
+        <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:text="T&#160;I&#160;M&#160;E&#160;R :"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linnerLayout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvTimer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewExtraLight
+                android:id="@+id/tvHRS"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="23"/>
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewExtraLight
+                android:id="@+id/tvDot1"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text=" : "/>
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewExtraLight
+                android:id="@+id/tvMin"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="59"/>
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewExtraLight
+                android:id="@+id/tvDot2"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text=":"/>
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewExtraLight
+                android:id="@+id/tvSec"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="01"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linnerLayout1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/linnerLayout">
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                android:id="@+id/tvHrs1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="H 2S"/>
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                android:id="@+id/tvMin1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="M I N"/>
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewMedium
+                android:id="@+id/tvSec1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="S E C"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvcheckTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:text="hello"
+            android:visibility="gone"
+            android:layout_below="@+id/linnerLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="48dp" />
+    </RelativeLayout>
+    <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+        android:id="@+id/tvContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.Offers.HowItWork">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMenu"
+        android:src="@drawable/menu"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgLogoTimer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/new_logo_app"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvLogoTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="@string/logoText"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imgLogoTimer" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvLogoTimer"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeView"
+        android:layout_below="@+id/tvLogoTimer"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+            android:id="@+id/tvWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="#2D303A"
+            android:layout_marginTop="5dp"
+            android:text="@string/navWork"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_below="@+id/tvWork">
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                android:id="@+id/tvWorkDetailPonit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#2D303A"
+                android:textAlignment="textStart"
+                android:text="1. Enable Location Settings"
+                tools:ignore="RtlCompat"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true" />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                android:id="@+id/tvWork_detail_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:lineSpacingExtra="5dp"
+                android:layout_below="@+id/tvWorkDetailPonit1"
+                android:textAlignment="textStart"
+                android:text="@string/work_detail_location"
+                tools:ignore="RtlCompat" />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                android:id="@+id/tv_Work_detail_outlets_point2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#2D303A"
+                android:layout_below="@+id/tvWork_detail_location"
+                android:text="2. Choose from list of outlets."
+                tools:ignore="RtlCompat"
+                />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                android:id="@+id/tv_Work_detail_outlets"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:lineSpacingExtra="5dp"
+                android:layout_below="@+id/tv_Work_detail_outlets_point2"
+                android:textAlignment="textStart"
+                android:text="@string/simply_choose_the"
+                tools:ignore="RtlCompat" />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                android:id="@+id/tv_Work_detail_checkout_point3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#2D303A"
+                android:textAlignment="textStart"
+                android:text="3. Get to Checkout!"
+                tools:ignore="RtlCompat"
+                android:layout_below="@+id/tv_Work_detail_outlets"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewLight
+                android:id="@+id/tv_Work_detail_checkout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:lineSpacingExtra="5dp"
+                android:textAlignment="textStart"
+                android:text="@string/ask_the_cas"
+                tools:ignore="RtlCompat"
+                android:layout_below="@+id/tv_Work_detail_checkout_point3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <com.example.fostersoftsol01.luvoffers.textview.TextViewSemiBold
+                android:id="@+id/tvThanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#2D303A"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/tv_Work_detail_checkout"
+                android:textAlignment="center"
+                android:text="Thank you!"
+                tools:ignore="RtlCompat" />
+
+            <com.example.fostersoftsol01.luvoffers.button.ButtonSemiBold
+                android:id="@+id/btnThanks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvThanks"
+                android:text="@string/thanks"
+                android:background="@drawable/btn_bg"
+                android:textColor="#FFFFFF"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginBottom="30dp"
+               />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

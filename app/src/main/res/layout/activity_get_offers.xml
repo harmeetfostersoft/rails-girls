@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_image"
+    tools:context="com.example.fostersoftsol01.luvoffers.Offers.GetOffers">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeView">
+
+
+            /// offer screen
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeViewOffer"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/img_back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/new_logo_app"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLogo"
+                android:layout_centerHorizontal="true"
+                android:textSize="32sp"
+                android:textColor="#ffffff"
+                android:text="@string/logoText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChaicher"
+                android:textSize="25sp"
+                android:background="@drawable/edittext_background"
+                android:alpha="0.4"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_gravity="end"
+                android:text="@string/chicher"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tvLogo"
+                android:layout_centerHorizontal="true" />
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_below="@+id/tvChaicher"
+    android:layout_alignLeft="@+id/tvChaicher"
+    android:layout_alignStart="@+id/tvChaicher">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/tvOurput"
+            android:textSize="18sp"
+            android:alpha="0.4"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="20dp"
+            android:textColor="#5E74BE"
+            android:layout_gravity="end"/>
+
+        <Button
+            android:id="@+id/btnOffers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/accpet_offer"
+            android:background="@drawable/btn_background"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="300dp"
+            android:layout_weight="1"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>
+
+        </RelativeLayout>
+            //// end offer screen
+
+
+            ///start Timer screen
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeViewTimer"
+                android:visibility="visible">
+
+
+
+                <ImageView
+                    android:id="@+id/imgBackTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/img_back"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+                <ImageView
+                    android:id="@+id/imgLogoTimer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvLogoTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgLogoTimer"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:text="@string/logoText"/>
+
+
+                <TextView
+                    android:id="@+id/tvTimer"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLogoTimer"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="50sp"
+                    android:textAlignment="center"
+                    android:shadowDy="1"
+
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/timmer"/>
+
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tvTimer"
+                    android:layout_alignLeft="@+id/tvTimer"
+                    android:layout_alignStart="@+id/tvTimer">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="400dp"
+                                android:id="@+id/tvTimerOutoput"
+                                android:textSize="18sp"
+                                android:alpha="0.4"
+                                android:background="@drawable/edittext_background"
+                                android:textColor="#5E74BE"
+                                android:layout_gravity="end"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+
+                        </RelativeLayout>
+
+                    </ScrollView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            ///////end Timer Screen
+
+
+        </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>
